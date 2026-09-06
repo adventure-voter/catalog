@@ -1,0 +1,25 @@
+---
+id: intro-b
+type: story
+next: self-service-choice
+---
+
+# Every Request Is A Ticket
+
+You are the platform team. There are six of you. There are two hundred developers in the company.
+
+They don't want a machine. They don't want a vm.
+
+They want a `Postgres`. A queue. A bucket. Credentials that work. And they don't want a thousands
+tools for these things.
+
+Imagine taking a look at this queue:
+
+```table
+PLAT-4471  postgres for checkout-svc            Open   2d
+PLAT-4472  S3 bucket + creds, staging           Open   2d
+PLAT-4473  kafka topic (see PLAT-4470)          Open   3d
+PLAT-4474  postgres for checkout-svc (dup?)     Open   1d
+```
+
+Let's see if we can make things a little bit better.
