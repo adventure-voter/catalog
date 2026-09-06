@@ -1,0 +1,10 @@
+title: An Internal Developer Platform, The Hard Way
+location: presentation
+image: cover.svg
+description: Four votes, forty teams, and two hundred developers who only ever wanted a database and the password to it. An interactive tour of how we hand out infrastructure, why every self-service answer becomes a dialect, and why the ending is a Secret rather than a portal.
+tags:
+  - platform-engineering
+  - external-secrets
+  - kcp
+  - kubernetes
+  - developer-experience
