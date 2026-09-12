@@ -5,16 +5,18 @@ type: terminal
 
 # You Were Right
 
-vcluster. Every team gets a real API server, their own CRDs, their own RBAC, running as a pod on a host cluster your team already knows how to operate.
+`vcluster` (or some variation/product building on it). Every team gets a real API server, their own CRDs, their own RBAC, running as a pod on a host cluster.
 
-And critically: **workloads still work.** `kubectl run nginx` runs nginx. There is a kubelet down there somewhere. Someone else's kubelet, but a real one.
+And most importantly: **workloads still work.** `kubectl run nginx` runs nginx.
 
-CRD collisions: gone. Cluster-admin without handing out a cluster: yes. Cost: a fraction of a cluster each.
+CRD collisions are gone. Everyone is an admin of their own cluster.
 
-If what your developers need is **a cluster that behaves like a cluster**, pods, deployments, services, the whole familiar surface, then this is the correct answer, and reaching for something more exotic would be architecture astronautics.
+If you really _need_ a whole cluster, this, and others like this, are a viable solution.
 
-You solved the problem you actually had. That is the entire job.
+If what your developers need is **a cluster that behaves like a cluster**, pods, deployments, services, etc, then this is probably enough.
 
-**THE END.** And a good one.
+Evolving this might make it better, but no need to touch something that works.
 
-*There is one more door, though. Behind it, the hard part was never the compute. It was the credentials.*
+**THE END.**
+
+_OR IS IT? Did you really solve the access issue to other clusters and APIs provided by other teams?_

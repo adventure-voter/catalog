@@ -6,11 +6,9 @@ next: isolation-choice
 
 # This One Actually Works
 
-Let's be honest about the good answer, because it exists and it is deeply unglamorous.
+GitOps with [Kro](https://kro.run/) or [Crossplane](https://www.crossplane.io/) and [Flux](https://docs.fluxcd.io/) or [Argo](https://argo-cd.readthedocs.io/en/stable/) is a deeply traversed path in this ecosystem.
 
-Your team defines, once, what a database *is* at this company. The instance, the subnet group, the parameter group, encryption, backups, the tags finance needs, the retention legal asked for. One composition. One place.
-
-The developer writes this:
+A developer might just create a manifest like this:
 
 ```yaml
 apiVersion: platform.acme.io/v1alpha1
@@ -22,14 +20,14 @@ spec:
   version: "16"
 ```
 
-They open a PR. Argo applies it. Crossplane reconciles it against the real cloud.
+Open a PR, apply, reconcile, done.
 
-And if somebody deletes that database by hand at 02:00, it comes back, because the repository is the truth and the cloud is only a cache of it.
+Prevents manual meddling.
 
-Real infrastructure. Reviewable, auditable, and rolled back with `git revert` like everything else they own.
+Auditable, `git revert` is something is busted.
 
-This is genuinely good engineering. Plenty of excellent teams stop exactly here and are right to.
+This is a very good start and most companies stop here.
 
-Hold on to one detail though, because it comes back at the end:
+But wait. There is more!
 
-**It works because nobody had to learn anything.** They wrote some YAML and opened a pull request. They have been doing that since their first week.
+![But wait, there is more!](./but-wait.jpg)

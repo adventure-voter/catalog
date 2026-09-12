@@ -5,17 +5,18 @@ type: game-over
 
 # Two Hundred Vault Accounts
 
-Vault is excellent software. That is not what goes wrong here.
+Vault is an excellent software. That's not the problem.
 
 You hand out accounts. And with them:
 
 A new CLI. `vault kv get -field=password secret/data/db/alice`.
 
-A new auth flow. OIDC, a browser tab, a token that expires in eight hours, which means it expires at 16:55 on a Friday.
+A new auth flow. OIDC, a browser tab, and a token that expires.
 
-A new policy language, and a policy per developer, and a `path "secret/data/db/{{identity.entity.aliases...}}"` template that you will get wrong twice before you get it right.
+A new policy language, and a policy per developer, and a `path "secret/data/db/{{identity.entity.aliases...}}"` template that you will probably, most likely mistype or just plain
+already forgot.
 
-A new support queue. Every `permission denied` is now yours.
+A new support queue. Though, to be fair, that will be a thing no matter how you solve it.
 
 ```console
 $ vault kv get -field=password secret/data/db/alice
@@ -25,14 +26,16 @@ Code: 403. Errors:
 	* permission denied
 ```
 
-Then the second cloud arrives. The acquired product keeps its credentials in AWS Secrets Manager, so now it is `aws secretsmanager get-secret-value --secret-id`. Different CLI, different auth, different mental model, same developer.
+Then, the company acquires another product and the secrets for that live in AWS Secrets Manager.
 
-And none of it helps at the only moment that matters, which is when her **application** needs the credential at runtime rather than her terminal. So she copies it into a `.env`. The `.env` reaches a commit. The commit is on a branch nobody ever deleted.
+And so it begins:
 
-You handed two hundred people a dialect and made them learn it.
+```console
+aws secretsmanager get-secret-value --secret-id
+```
 
-You have built the portal again. It is wearing a better hat.
+New CLI. New auth flow. New env. But still the same.
 
 **GAME OVER**
 
-*Vault stays. It should. It just should not be the thing developers touch.*
+_BUT! It's a good idea, the execution can be better!_

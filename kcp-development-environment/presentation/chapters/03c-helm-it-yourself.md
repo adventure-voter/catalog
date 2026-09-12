@@ -22,6 +22,6 @@ Fast. Reliable. Easy.
 
 **Week eight.** Twelve of these exist.
 
-And all twelve are **important**, because _some customer is running against this instance in dev_ (literally a phrase uttered MORE THAN ONCE that *I* heard).
+And all twelve are **important**, because _some customer is running against this instance in dev_ (literally a phrase uttered MORE THAN ONCE that **I** heard).
 
 Now you shifted the operational costs and burdens over to the developers and they took it gleefully.

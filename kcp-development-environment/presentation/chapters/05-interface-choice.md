@@ -22,10 +22,8 @@ choices:
 
 Not a module. Not an account. Not a VPC.
 
-```
+```console
 "Postgres 16, small, eu-west-1, and I need the password."
 ```
 
-That sentence is the whole requirement. Everything underneath it is your problem, and it should stay your problem.
-
-So. Where do they say it?
+That is the only thing and everything that leads to this, is none of their business.
