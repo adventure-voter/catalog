@@ -2,7 +2,7 @@
 id: isolation-choice
 type: decision
 timer: 40
-question: Forty teams, each shipping APIs to the others. How do we isolate them?
+question: Too many teams, too many choices.
 choices:
   - id: vcluster
     label: Virtual clusters on a shared host
@@ -20,10 +20,9 @@ choices:
 
 # Two Years Later
 
-The company grew. Forty teams now, and the thing you built worked so well that it changed what people build with it.
+The company grows and now there are forty teams and they all learned to ship _services_ and **APIs** to each other
+rather than tars or gzips. You trained them well.
 
-Teams stopped shipping *services* to each other and started shipping **APIs**. Your platform CRDs taught them the trick, and now every team has their own. One team's product is a `PaymentRoute` that three other teams depend on. Another's is a `FeatureGate` that eight more depend on.
+One team's product is a `PaymentRoute` that three other teams depend on. Another's is a `FeatureGate` that eight more depend on.
 
-Everyone needs their own API surface, their own CRD versions, their own RBAC.
-
-Without their own cluster. And without the air horn.
+Everything needs its own CRD, RBAC, API surface, service accounts, user handling...

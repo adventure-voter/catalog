@@ -3,23 +3,13 @@ id: ending-kcp
 type: terminal
 ---
 
-# The Interface Was The Product
+# A control plane per team with a catalog
 
-A control plane per team, and a catalog of things they are allowed to have.
-
-Databases, queues, buckets, credentials. You publish them as APIs. They bind them as APIs. Everything a developer needs arrives as an object in an API server they already knew how to talk to, and everything they are not allowed to have simply is not in their catalog.
-
-That is the platform. The whole platform.
-
-**Nobody had to learn anything.**
-
-Not a portal. Not a CLI. Not a YAML dialect with a schema and a linter and a Confluence page nobody reads. Alice typed `kubectl get secret postgres`, it worked, and she went back to her actual job.
-
-Every development environment you have ever hated, you hated because it made you learn *it* instead of letting you do your work.
+No portal, new custom CLI, no new flows to learn.
 
 ---
 
-## When this is the wrong answer
+## When this doesn't work
 
 Be honest, because it often is.
 

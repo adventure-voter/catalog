@@ -6,11 +6,11 @@ next: credentials-choice
 
 # Publish It Once
 
-Alice has a control plane. It is empty.
+They have a control plane. It's empty.
 
-Somebody still has to put a database in it, and this is the part where every previous answer on this board fell over.
+The database has to come from _somewhere_. This is the last missing piece of this puzzle.
 
-Not this time. Your team defines what a Postgres is at this company, exactly once, in a workspace Alice will never visit.
+You define `once` what a `Postgres` database _IS_ for this company.
 
 ```yaml
 apiVersion: apis.kcp.io/v1alpha1
@@ -24,9 +24,9 @@ spec:
     - v250901.buckets.platform.acme.io
 ```
 
-That is the catalog. Three lines, three products.
+This is the catalog of this company.
 
-Alice takes one:
+The user takes one:
 
 ```yaml
 apiVersion: apis.kcp.io/v1alpha1
@@ -47,21 +47,15 @@ queues              platform.acme.io/v1alpha1   true   Queue
 buckets             platform.acme.io/v1alpha1   true   Bucket
 ```
 
-The API is in her control plane. Now look at what nobody did.
+Now, there is an API for the user to play with.
 
-**Nobody installed a CRD.** Not Alice, not you, not in her workspace. There is no CRD to collide with, because the schema is not hers and never was. That air horn from earlier does not exist here.
+**The user didn't install a CRD.**
+**The user doesn't have to manage and operator.**
+**Failures are surfaced through the status of the object.**
+**Workspaces enforce multi-tenancy.**
+**CRD versions are used when needed.**
 
-**Nobody deployed a controller.** One reconciler runs, in your workspace, against one virtual endpoint that serves every `PostgresInstance` in the company at once. Forty tenants. One deployment. One thing to page you.
-
-**Nobody wrote RBAC for the other thirty-nine.** Alice cannot see them. There is no list call that would return them. Multi-tenancy is not a policy you enforced, it is the shape of the thing.
-
-And when you ship `v1beta1` next quarter, you publish it and teams bind it when they are ready. Nobody's Tuesday is ruined by your Tuesday.
-
-This is the Crossplane composition from earlier, kept exactly as it was, and handed out as an **API** instead of a shared cluster.
-
-The catalog is the platform. What is in Alice's catalog is what Alice is allowed to have, and there is no portal in which to enforce that, because there is no portal.
-
-So she asks for one.
+The catalog is what the user is allowed to ask for. Just create the object.
 
 ```console
 $ kubectl create -f postgres.yaml
@@ -72,8 +66,5 @@ NAME       SIZE    VERSION   PHASE   AGE
 checkout   small   16        Ready   96s
 ```
 
-Real database. Real cloud. `kubectl`.
-
-And then Alice asks the only question left.
-
-> *"Where's the password?"*
+And then, there is the last question.
+_Where is my password?_
