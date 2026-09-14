@@ -20,5 +20,4 @@ choices:
 
 # Self-Service, Obviously
 
-The answer is self-service. Everybody knows the answer is self-service. It's on the poster that is
-hanging on the wall above the water cooler. (If offices are still a thing...)
+It's going to be a service that we provide. It's always some kind of service...
