@@ -1,7 +1,7 @@
 ---
 id: self-service-choice
 type: decision
-timer: 60
+timer: 30
 question: Two hundred developers, six of you, everything is a ticket. What can we do?
 choices:
   - id: terraform

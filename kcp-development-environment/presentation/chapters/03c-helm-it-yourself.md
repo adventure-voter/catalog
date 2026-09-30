@@ -16,7 +16,7 @@ STATUS: deployed
 
 Fast. Reliable. Easy.
 
-**Week three.** A node drains during a routine upgrade. The pod moves. The data does not, because the default is `emptyDir` and people don't read defaults properly.
+**Week three.** A node drains during a routine upgrade. The pod moves. The data does not, because the default is `emptyDir` and people don't read defaults anyways, or just forget about them.
 
 **Week five.** Someone needs a restore. There are no backups. There was never anything taking backups. No snapshot, no WAL archive, no cron, no plan.
 

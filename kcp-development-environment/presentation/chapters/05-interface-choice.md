@@ -1,7 +1,7 @@
 ---
 id: interface-choice
 type: decision
-timer: 40
+timer: 30
 question: They should ask for a database, not a VPC. So what do they actually talk to?
 choices:
   - id: chatops
@@ -26,4 +26,4 @@ Not a module. Not an account. Not a VPC.
 "Postgres 16, small, eu-west-1, and I need the password."
 ```
 
-That is the only thing and everything that leads to this, is none of their business.
+That is the only thing and everything that leads to this, is none of their concern.

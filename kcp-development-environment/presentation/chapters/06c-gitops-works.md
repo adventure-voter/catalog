@@ -24,7 +24,7 @@ Open a PR, apply, reconcile, done.
 
 Prevents manual meddling.
 
-Auditable, `git revert` is something is busted.
+Auditable, `git revert` if something is busted.
 
 This is a very good start and most companies stop here.
 

@@ -13,16 +13,14 @@ alice   /provision postgres --size small
 bot     ✅  provisioning pg-alice-7f3 ... done (2m14s)
 ```
 
-No new tools needed and the feedback is pretty good.
-
-Then, the flood drains open:
+No new tools needed and the feedback is pretty good as long as people stay with the sensible defaults..
 
 *Where is my `-o yaml` output?*
 
 *Ugh, someone requested this already at some point, I'm pretty sure... scroll, scroll, scroll.*
 
-*I need to review it before it creates it.*
+*Is there a dry run option?*
 
 *Well, this broke. How do I even access the debug logs?*
 
-Then, the bot dies. Dave leaves on a two week vacation. You built a glorified CLI that is arguably worse.
+Then, the bot dies. Dave leaves on a two weeks vacation. You built a glorified CLI.

@@ -1,7 +1,7 @@
 ---
 id: isolation-choice
 type: decision
-timer: 40
+timer: 30
 question: Too many teams, too many choices.
 choices:
   - id: vcluster

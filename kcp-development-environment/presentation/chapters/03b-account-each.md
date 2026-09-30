@@ -6,11 +6,13 @@ next: the-real-problem
 
 # Here Are The Keys
 
-Proper self-service. An account per team with a good starting point. A channel called `#cloud-help`, and all of your six people are in that channel.
+Proper self-service. An account per team with a good starting point.
 
-This does work. For about three weeks.
+You add a channel called `#cloud-help` for good measures.
 
-Nobody uses tags, so nobody can say what anything costs, so nobody can turn anything off.
+This does work... for a while
+
+Nobody uses tags, so no-one can say what anything costs, so nobody can turn anything off.
 
 Somebody creates an RDS instance in `ap-southeast-2`, because the console remembered a region from a tutorial. It is still running. It has a public endpoint.
 

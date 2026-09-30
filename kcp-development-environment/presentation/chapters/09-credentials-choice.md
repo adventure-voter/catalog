@@ -1,7 +1,7 @@
 ---
 id: credentials-choice
 type: decision
-timer: 40
+timer: 30
 question: The database exists. Time to access it.
 choices:
   - id: vault-direct
