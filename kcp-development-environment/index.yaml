@@ -1,0 +1,10 @@
+title: An Internal Developer Platform, The Hard Way
+location: presentation
+image: cover.svg
+description: Walk through a journey of figuring out how to handle multiple developers, variying environments and a large team with all sorts of requirements.
+tags:
+  - platform-engineering
+  - external-secrets
+  - kcp
+  - kubernetes
+  - developer-experience
